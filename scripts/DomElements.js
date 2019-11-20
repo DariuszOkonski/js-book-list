@@ -62,7 +62,7 @@ class DomElements {
   }
 }
 
-const displayInformation = (element, color, message) => {
+export const displayInformation = (element, color, message) => {
   element.style.visibility = 'visible'
   element.style.backgroundColor = color;
   element.textContent = message;
@@ -72,7 +72,7 @@ const clearInformation = (element) => {
   element.style.visibility = 'hidden';
 }
 
-const clearInformationTimeOut = (element) => {
+export const clearInformationTimeOut = (element) => {
   setTimeout(() => {
     clearInformation(element);
   }, 3000);
