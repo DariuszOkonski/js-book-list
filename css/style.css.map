@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,EAAE,CAAC;EACD,KAAK,EAAE,GAAG;CACX",
+    "mappings": "ACAA,OAAO,CAAC,4EAAI;AAEZ,AAAA,CAAC;AACD,CAAC,AAAA,QAAQ;AACT,CAAC,AAAA,OAAO,CAAC;EACP,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;CACvB;;AAED,AAAA,IAAI,CAAC;EACH,WAAW,EAAE,kBAAkB;EAC/B,SAAS,EAAE,IAAI;CAChB;;ADXD,AAAA,EAAE,CAAC;EACD,KAAK,EAAE,KAAK;CACb",
     "sources": [
-        "../scss/style.scss"
+        "../scss/style.scss",
+        "../scss/_reset.scss"
     ],
     "names": [],
     "file": "style.css"

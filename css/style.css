@@ -1,4 +1,19 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+}
+
 h1 {
-  color: red;
+  color: green;
 }
 /*# sourceMappingURL=style.css.map */
