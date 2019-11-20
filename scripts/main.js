@@ -1,5 +1,8 @@
 import Book from './Book.js';
-import DomElements from './DomElements.js';
+import DomElements, {
+  displayInformation,
+  clearInformationTimeOut
+} from './DomElements.js';
 import BookList from './BookList.js';
 
 const dom = new DomElements();
@@ -23,6 +26,8 @@ function removeElementFromList() {
   const indexToFind = Number(this.id);
   bookList.setList(bookList.getList().filter(el => el.id !== indexToFind));
   dom.addToTableBody(bookList.getList());
+  displayInformation(dom.information, 'blue', 'Element has been removed from book list');
+  clearInformationTimeOut(dom.information);
   findRemoveButtons();
 }
 
