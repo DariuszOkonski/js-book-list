@@ -9,12 +9,22 @@ const dom = new DomElements();
 const bookList = new BookList();
 
 if (bookList.getList().length > 0) {
+  addToListFindRemoveButtons();
+}
+
+//Read fromm local storage ==================================
+
+if (localStorage.getItem('books') !== null) {
+  bookList.setList(JSON.parse(localStorage.getItem('books')));
+  addToListFindRemoveButtons();
+}
+
+//====================================================
+function addToListFindRemoveButtons() {
   dom.addToTableBody(bookList.getList());
   findRemoveButtons();
 }
-// console.log(bookList.getList());
 
-//====================================================
 function findRemoveButtons() {
   dom.removeButtons = document.querySelectorAll('.table__button');
   dom.removeButtons.forEach(el => {
@@ -22,15 +32,21 @@ function findRemoveButtons() {
   })
 }
 
+function writeToLocalStorage() {
+  localStorage.setItem('books', JSON.stringify(bookList.getList()));
+}
+
 function removeElementFromList() {
   const indexToFind = Number(this.id);
   bookList.setList(bookList.getList().filter(el => el.id !== indexToFind));
   dom.addToTableBody(bookList.getList());
+
+  writeToLocalStorage();
+
   displayInformation(dom.information, 'blue', 'Element has been removed from book list');
   clearInformationTimeOut(dom.information);
   findRemoveButtons();
 }
-
 
 //====================================================
 const submitBook = (e) => {
@@ -43,11 +59,12 @@ const submitBook = (e) => {
   dom.clearInputs();
 
   bookList.addBook(newBook)
+  writeToLocalStorage();
+
   dom.bookAdded();
   dom.addToTableBody(bookList.getList());
 
   findRemoveButtons();
-  console.log('Working===================: ')
 }
 
 dom.submitButton.addEventListener('submit', submitBook);
