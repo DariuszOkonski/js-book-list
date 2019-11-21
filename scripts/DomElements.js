@@ -33,7 +33,6 @@ class DomElements {
 
       return false;
     } else {
-      // clearInformation(this.information);
       return true;
     }
   }
