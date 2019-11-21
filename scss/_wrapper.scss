@@ -10,17 +10,17 @@ body {
 
 .wrapper {
   width: 100%;
-  max-width: 900px;
+  max-width: 700px;
   margin: 0 auto;
   padding: $p-small;
   background-color: grey;
   border: 1px solid black;
   border-radius: $border-radius-small;
 
-  @media(min-width: $media-desktop) {
-    padding: $p-large;
-    max-width: 1100px;
-  }
+  // @media(min-width: $media-desktop) {
+  //   padding: $p-large;
+  //   max-width: 1100px;
+  // }
 
   .header {
     font-size: $fs-header-small;
@@ -29,9 +29,9 @@ body {
     text-transform: uppercase;
     font-weight: 300;
 
-    @media(min-width: $media-desktop) {
-      font-size: $fs-header-large;
-    }
+    // @media(min-width: $media-desktop) {
+    //   font-size: $fs-header-large;
+    // }
   }
 
   .information {
@@ -43,11 +43,11 @@ body {
     border-radius: $border-radius-small;
     margin: $m-small 0;
 
-    @media(min-width: $media-desktop) {
-      padding: $p-large;
-      margin: $m-large 0;
-      font-size: $fs-large;
-    }
+    // @media(min-width: $media-desktop) {
+    //   padding: $p-large;
+    //   margin: $m-large 0;
+    //   font-size: $fs-large;
+    // }
   }
 
   .form {
@@ -55,9 +55,9 @@ body {
     padding: $p-small;
     border-radius: $border-radius-small;
 
-    @media(min-width: $media-desktop) {
-      padding: $p-large;
-    }
+    // @media(min-width: $media-desktop) {
+    //   padding: $p-large;
+    // }
 
     &__label,
     &__input,
@@ -68,10 +68,10 @@ body {
       border-radius: $border-radius-small;
       font-size: $fs-small;
 
-      @media(min-width: $media-desktop) {
-        padding: $p-large;
-        font-size: $fs-large;
-      }
+      // @media(min-width: $media-desktop) {
+      //   padding: $p-large;
+      //   font-size: $fs-large;
+      // }
     }
 
     &__input {
@@ -86,9 +86,9 @@ body {
       cursor: pointer;
       transition: .2s;
 
-      @media(min-width: $media-desktop) {
-        margin-top: $m-very-large;
-      }
+      // @media(min-width: $media-desktop) {
+      //   margin-top: $m-very-large;
+      // }
 
       &:hover {
         background-color: black;
@@ -103,9 +103,9 @@ body {
     border-radius: $border-radius-small;
     padding: $p-small;
 
-    @media(min-width: $media-desktop) {
-      margin: $m-large 0;
-    }
+    // @media(min-width: $media-desktop) {
+    //   margin: $m-large 0;
+    // }
 
     .table {
       width: 100%;
@@ -114,9 +114,9 @@ body {
         text-align: left;
         font-size: $fs-small;
 
-        @media(min-width: $media-desktop) {
-          font-size: $fs-large;
-        }
+        // @media(min-width: $media-desktop) {
+        //   font-size: $fs-large;
+        // }
       }
 
       &__cell {
@@ -124,10 +124,10 @@ body {
         padding: $p-small;
         border-bottom: 1px solid black;
 
-        @media(min-width: $media-desktop) {
-          font-size: $fs-large;
-          padding: $p-large;
-        }
+        // @media(min-width: $media-desktop) {
+        //   font-size: $fs-large;
+        //   padding: $p-large;
+        // }
 
         &--title {
           width: 40%;
@@ -156,10 +156,10 @@ body {
         cursor: pointer;
         transition: .2s;
 
-        @media(min-width: $media-desktop) {
-          padding: $p-large;
-          font-size: $fs-small;
-        }
+        // @media(min-width: $media-desktop) {
+        //   padding: $p-large;
+        //   font-size: $fs-small;
+        // }
 
         &:hover {
           background-color: white;
