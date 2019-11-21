@@ -30,7 +30,7 @@ body {
 
 .wrapper {
   width: 100%;
-  max-width: 900px;
+  max-width: 700px;
   margin: 0 auto;
   padding: 0.5rem;
   background-color: grey;
@@ -40,8 +40,8 @@ body {
 
 @media (min-width: 1025px) {
   .wrapper {
-    padding: 1rem;
-    max-width: 1100px;
+    padding: 0.7rem;
+    max-width: 750px;
   }
 }
 
@@ -63,16 +63,16 @@ body {
   visibility: hidden;
   color: white;
   padding: 0.5rem;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   border-radius: 0.5rem;
   margin: 0.5rem 0;
 }
 
 @media (min-width: 1025px) {
   .wrapper .information {
-    padding: 1rem;
-    margin: 1rem 0;
-    font-size: 1.2rem;
+    padding: 0.7rem;
+    margin: 0.7rem 0;
+    font-size: 0.8rem;
   }
 }
 
@@ -84,7 +84,7 @@ body {
 
 @media (min-width: 1025px) {
   .wrapper .form {
-    padding: 1rem;
+    padding: 0.7rem;
   }
 }
 
@@ -93,13 +93,13 @@ body {
   display: block;
   padding: 0.5rem;
   border-radius: 0.5rem;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
 }
 
 @media (min-width: 1025px) {
   .wrapper .form__label, .wrapper .form__input, .wrapper .form__button {
-    padding: 1rem;
-    font-size: 1.2rem;
+    padding: 0.7rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -111,7 +111,7 @@ body {
   background-color: transparent;
   border: 1px solid black;
   text-transform: uppercase;
-  margin-top: 1rem;
+  margin-top: 0.7rem;
   cursor: pointer;
   -webkit-transition: .2s;
   transition: .2s;
@@ -119,7 +119,7 @@ body {
 
 @media (min-width: 1025px) {
   .wrapper .form__button {
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
 }
 
@@ -137,7 +137,7 @@ body {
 
 @media (min-width: 1025px) {
   .wrapper .result {
-    margin: 1rem 0;
+    margin: 0.7rem 0;
   }
 }
 
@@ -147,25 +147,25 @@ body {
 
 .wrapper .result .table__row {
   text-align: left;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
 }
 
 @media (min-width: 1025px) {
   .wrapper .result .table__row {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
   }
 }
 
 .wrapper .result .table__cell {
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   padding: 0.5rem;
   border-bottom: 1px solid black;
 }
 
 @media (min-width: 1025px) {
   .wrapper .result .table__cell {
-    font-size: 1.2rem;
-    padding: 1rem;
+    font-size: 0.8rem;
+    padding: 0.7rem;
   }
 }
 
@@ -190,7 +190,7 @@ body {
   background-color: transparent;
   padding: 0.5rem;
   text-transform: uppercase;
-  font-size: 0.4rem;
+  font-size: 0.3rem;
   border-radius: 0.5rem;
   cursor: pointer;
   -webkit-transition: .2s;
@@ -199,8 +199,8 @@ body {
 
 @media (min-width: 1025px) {
   .wrapper .result .table__button {
-    padding: 1rem;
-    font-size: 0.8rem;
+    padding: 0.7rem;
+    font-size: 0.6rem;
   }
 }
 
